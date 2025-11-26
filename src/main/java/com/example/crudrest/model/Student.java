@@ -15,6 +15,16 @@ public class Student {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long id;
+
+    private String address;
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 	
 	public long getId() {
 		return id;
@@ -54,6 +64,8 @@ public class Student {
 	
 	@NotNull
 	@Email(message="Invalid Email id")
+
+
 	private String email;
 	
 	@Pattern(regexp="^[0-9]{10}$",message="Mobile no must be 10 digits")
