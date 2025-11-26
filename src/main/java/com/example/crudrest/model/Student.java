@@ -14,7 +14,7 @@ public class Student {
  
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private long id;
+	private long C_id;
 	
 	public String getName() {
 		return name;
