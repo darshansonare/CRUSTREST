@@ -15,7 +15,16 @@ public class Student {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long C_id;
-	
+
+	private long number;
+
+	public String setNumber(long number){
+		this.number=number;
+	}
+
+	public long getNumber(){
+		return number;
+	}
 	public long getId() {
 		return id;
 	}
